@@ -8,10 +8,8 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SatsumaTuner95</RootNamespace>
-    <AssemblyName>SatsumaTuner95</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AssemblyName>SatsumaTuner95</AssemblyName> 
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>unity fully v3.5</TargetFrameworkProfile>
     <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
