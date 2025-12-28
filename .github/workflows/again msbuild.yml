@@ -1,0 +1,30 @@
+name: Build DLL Mod (.NET 3.5 Fix)
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    # .NET Framework 3.5 기능 활성화 (오류 해결 핵심)
+    - name: Enable .NET Framework 3.5
+      run: Dism /online /enable-feature /featurename:NetFx3 /All
+      shell: cmd
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Restore NuGet packages
+      run: nuget restore
+
+    - name: Build Solution
+      run: msbuild /p:Configuration=Release
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: SatsumaTuner95-DLL
+        path: '**/*.dll'
