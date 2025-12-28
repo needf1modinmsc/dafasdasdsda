@@ -11,7 +11,8 @@
     <AssemblyName>SatsumaTuner95</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>unity fully v3.5</TargetFrameworkProfile>
+    <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
